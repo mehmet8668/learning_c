@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() {
+    
+    float sonuc,a,b;
+    char islem;
+    
+    
+    
+    printf("İki sayı giriniz:\n");
+    scanf("%f\n%f",&a,&b);
+    printf("------MENÜ------\n");
+    printf("Yapmak istediğiniz işlemi seçiniz(+,-,/,:");
+    scanf("%c",&islem); 
+    switch (islem) {
+        case '+':
+            sonuc=a+b;
+            printf("%f + %f = %f",a,b,sonuc);
+            break;
+        case '-':
+            sonuc=a-b;
+            printf("%f - %f = %f",a,b,sonuc);
+            break;
+        case '*':
+            sonuc=a*b;
+            printf("%f * %f = %f",a,b,sonuc);
+            break;
+        case '/':
+            sonuc=a/b;
+            printf("%f / %f = %f",a,b,sonuc);
+            break;
+        default:
+            printf("Geçersiz işlem yaptınız!");
+            
+    }
+    return 0;
+}
