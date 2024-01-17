@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float x,y,z,toplam,ort;
+    printf("Lütfen ilk değeri giriniz:\n");
+    scanf("%f",&x);
+    printf("Lütfen ikinci değeri giriniz:\n");
+    scanf("%f",&y);
+    printf("Lütfen üçüncü sayıyı giriniz:\n");
+    scanf("%f",&z);
+    toplam = x+y+z;
+    ort=toplam/3;
+    printf("Üç sayının toplamı=%f",toplam);
+    printf("\n");
+    printf("Üç sayının ortalaması=%f",ort);
+    return 0;
+}
