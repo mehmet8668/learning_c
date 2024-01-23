@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int array[10]={10,20,30,40,50,60,70,80,90,100};
+	int x,y,z;
+	int size=(sizeof(array)/sizeof(array[0]));
+	
+	printf("Here's the array:\n");
+	for(x=0;x<size;x++){
+		printf("%d",array[x]);
+	}
+	
+	printf("Enter a number for new array:");
+	scanf("%d",&y);
+	printf("Which pozition do you want to add this number:");
+	scanf("%d",&z);
+	
+	for(x=size-1;x>z;x--){
+		array[x+1]=array[x];
+	}
+	array[z]=y;
+	
+	printf("New array:\n");
+	for(x=0;x<size+1;x++){
+		printf("%d\n",array[x]);
+	}
+	
+	return 0;
+	
+	
+}
