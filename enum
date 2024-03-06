@@ -1,0 +1,20 @@
+#include <stdio.h>
+enum boolean{False, True}; 
+int odd(int n){
+	return (n%2);
+}
+int main(){
+	enum boolean res;
+	int x;
+	printf("Enter a number: \n");
+	scanf("%d",&x);
+	res=odd(x);
+	if(res==True){
+		puts("Entered number is odd.");
+	}
+	else{
+		puts("Entered number is even.");
+	}
+	return 0;
+	
+}
