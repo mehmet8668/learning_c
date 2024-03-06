@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Ogrenci {
+	int No;
+	char ad[50];
+	char soyad[50];
+	char cinsiyet[50];
+	char Fakulte[50];
+	float genel_ort;
+};
+int main(){
+	struct Ogrenci OgrenciBilgisi1;
+	printf("-----------Ogrenci Veri Girisi-----------\n");
+	printf("Ogrenci No: ");
+	scanf("%d",&OgrenciBilgisi1.No);
+	printf("\nOgrenci Adi: ");
+	scanf("%s",&OgrenciBilgisi1.ad);
+	printf("\nOgrenci Soyadi: ");
+	scanf("%s",&OgrenciBilgisi1.soyad);
+	printf("\nOgrenci Cinsiyeti: ");
+	scanf("%s",&OgrenciBilgisi1.cinsiyet);
+	printf("\nOgrencinin Bolumu: ");
+	scanf("%s",&OgrenciBilgisi1.Fakulte);
+	printf("\nOgrencinin Genel Ortalamasi: ");
+	scanf("&lf\n",&OgrenciBilgisi1.genel_ort);
+	};
+	
+	
+	printf("-------------Ogrenci Verileri-------------\n");
+	printf("Ogrenci No: %d\nOgrenci Adi: %s\nOgrenci Soyadi: %s\nOgrenci Cinsiyeti: %snOgrencinin Bolumu: %s\nOgrenci Ortalamasi: %lf\n",OgrenciBilgisi1.No,OgrenciBilgisi1.ad,OgrenciBilgisi1.soyad,OgrenciBilgisi1.cinsiyet,OgrenciBilgisi1.Fakulte,OgrenciBilgisi1.genel_ort);
+	return 0;
+}
