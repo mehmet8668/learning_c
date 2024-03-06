@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define file_size 10000
+
+int main(){
+	char file[file_size];
+	FILE*fPtr;
+	fPtr = fopen("Important File!(Do not open!!).txt","w+");
+	if(fPtr==NULL){
+		printf("Failed to create file!");
+		exit(EXIT_FAILURE);
+	}
+	printf("Write the important massage: ");
+	fgets(file,file_size,stdin);
+	fputs(file,fPtr);
+	fclose(fPtr);
+	printf("Important file created succesfully.");
+	return 0;
+}
